@@ -41,3 +41,9 @@ yarn-error.log*
 /helm-chart/values.*.yaml
 /helm-chart/*.values.yaml
 /helm-chart/charts/*
+
+#Secrets
+/cvat-ui/src/actions/auth-actions.ts
+/cvat/apps/lambda_manager/tests/test_lambda.py
+/tests/cypress/integration/actions_projects/registration_involved/base_actions_project_task_user.js
+/tests/cypress/integration/actions_users/registration_involved/case_2_register_user_change_pass.js
