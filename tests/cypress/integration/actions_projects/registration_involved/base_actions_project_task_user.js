@@ -40,7 +40,7 @@ context('Base actions on the project', () => {
     const lastName = 'Seconduser lm';
     const userName = 'Seconduser';
     const emailAddr = `${userName}@local.local`;
-    const password = 'GDrb41RguF!';
+    const password = '';
     let projectID = '';
 
     function getProjectID(projectName) {

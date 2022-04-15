@@ -59,7 +59,7 @@ class _DbTestBase(APITestCase):
         group, _ = Group.objects.get_or_create(name="adm")
 
         admin = User.objects.create_superuser(
-            username="test", password="test", email="")
+            username="test", password="", email="")
         admin.groups.add(group)
 
         cls.user = admin

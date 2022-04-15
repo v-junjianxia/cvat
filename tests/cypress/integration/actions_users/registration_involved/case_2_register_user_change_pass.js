@@ -10,10 +10,10 @@ context('Register user, change password, login with new password', () => {
     const lastName = 'SecuserlmCaseTwo';
     const userName = 'SecuserCase2';
     const emailAddr = `${userName}@local.local`;
-    const password = 'GDrb41RguF!';
-    const incorrectCurrentPassword = 'gDrb41RguF!';
-    const newPassword = 'bYdOk8#eEd';
-    const secondNewPassword = 'ndTh48@yVY';
+    const password = '';
+    const incorrectCurrentPassword = '';
+    const newPassword = '';
+    const secondNewPassword = '';
 
     function changePassword(userName, password, newPassword) {
         cy.get('.cvat-right-header')

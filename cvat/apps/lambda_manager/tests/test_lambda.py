@@ -143,9 +143,9 @@ class LambdaTestCase(APITestCase):
         (group_user, _) = Group.objects.get_or_create(name="user")
 
         user_admin = User.objects.create_superuser(username="admin", email="",
-            password="admin")
+            password="")
         user_admin.groups.add(group_admin)
-        user_dummy = User.objects.create_user(username="user", password="user")
+        user_dummy = User.objects.create_user(username="user", password="")
         user_dummy.groups.add(group_user)
 
         cls.admin = user_admin

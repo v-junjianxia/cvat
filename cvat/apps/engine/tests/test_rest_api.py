@@ -41,17 +41,17 @@ def create_db_users(cls):
     (group_observer, _) = Group.objects.get_or_create(name="observer")
 
     user_admin = User.objects.create_superuser(username="admin", email="",
-        password="admin")
+        password="")
     user_admin.groups.add(group_admin)
-    user_owner = User.objects.create_user(username="user1", password="user1")
+    user_owner = User.objects.create_user(username="user1", password="")
     user_owner.groups.add(group_user)
-    user_assignee = User.objects.create_user(username="user2", password="user2")
+    user_assignee = User.objects.create_user(username="user2", password="")
     user_assignee.groups.add(group_annotator)
-    user_annotator = User.objects.create_user(username="user3", password="user3")
+    user_annotator = User.objects.create_user(username="user3", password="")
     user_annotator.groups.add(group_annotator)
-    user_observer = User.objects.create_user(username="user4", password="user4")
+    user_observer = User.objects.create_user(username="user4", password="")
     user_observer.groups.add(group_observer)
-    user_dummy = User.objects.create_user(username="user5", password="user5")
+    user_dummy = User.objects.create_user(username="user5", password="")
     user_dummy.groups.add(group_user)
 
     cls.admin = user_admin
